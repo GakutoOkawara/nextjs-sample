@@ -1,5 +1,7 @@
+import { Hello } from "../components/Hello"
+
 const RootPage = () => {
-  return <h1>It Works!</h1>
+  return <Hello />
 }
 
 export default RootPage
