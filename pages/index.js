@@ -1,12 +1,16 @@
+import NextHead from "next/head"
+import Link from "next/link"
+
 const RootPage = () => {
   return (
-    <div className="h-screen flex justify-center items-center">
-      <div className="py-4 px-6 text-center bg-green-600 rounded-md">
-        <h1 className="text-4xl font-bold text-white">
-          Hello Tailwind!
-        </h1>
-      </div>
-    </div>
+    <>
+      <NextHead>
+        <title>My Next Example</title>
+        <meta name="description" content="this is Next.js example" />
+      </NextHead>
+      <h1>It works!!</h1>
+      <Link href="/about">About</Link>
+    </>
   )
 }
 
