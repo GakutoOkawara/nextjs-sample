@@ -1,10 +1,16 @@
-import { useRouter } from "next/router"
+import { AppHead } from "../../components/AppHead"
 
-const ArticlePage = () => {
-  const router = useRouter()
-  const slug = router.query.slug
-
-  return <h1>Article: { slug }</h1>
+const ArticlePage = (props) => {
+  return (
+    <>
+      <AppHead 
+        title={props.title}
+        description={props.description}
+        slug={props.slug}
+      />
+      <h1>{props.title}</h1>
+    </>
+  )
 }
 
 export default ArticlePage
