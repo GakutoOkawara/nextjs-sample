@@ -1,15 +1,17 @@
 import NextHead from "next/head"
 import Link from "next/link"
+import Image from "next/image"
 
 const RootPage = () => {
   return (
     <>
-      <NextHead>
-        <title>My Next Example</title>
-        <meta name="description" content="this is Next.js example" />
-      </NextHead>
-      <h1>It works!!</h1>
-      <Link href="/about">About</Link>
+      <h1>next/image example</h1>
+      <Image 
+        src="/ogp.png"
+        alt="something"
+        width={600}
+        height={400}
+      />
     </>
   )
 }
